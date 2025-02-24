@@ -20,10 +20,9 @@ export class PlayersController {
 
   addPlayer(playerName) {
     const players = AppState.players
-    event.preventDefault()
-    players.push(playerName)
-    console.log('Added', playerName);
-    
+    event?.preventDefault()
+    playersService.addPlayer(playerName)
+    this.drawPlayers()
   }
 
   drawPlayers() {
