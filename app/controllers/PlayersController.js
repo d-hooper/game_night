@@ -9,15 +9,21 @@ export class PlayersController {
   }
 
   scorePoint(playerName) {
-    console.log(playerName, 'scores a point')
     playersService.changePointTotal(playerName, 1)
     this.drawPlayers()
   }
 
   losePoint(playerName) {
-    console.log(playerName, 'loses a point')
     playersService.changePointTotal(playerName, -1)
     this.drawPlayers()
+  }
+
+  addPlayer(playerName) {
+    const players = AppState.players
+    event.preventDefault()
+    players.push(playerName)
+    console.log('Added', playerName);
+    
   }
 
   drawPlayers() {

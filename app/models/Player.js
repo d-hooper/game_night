@@ -8,7 +8,7 @@ export class Player {
 
   get PlayerTemplateCard() {
     return /*html*/ `
-  <div class="col-6">
+  <div class="col-md-6">
     <div class="bg-light text-dark fs-3 rounded-4 p-2 m-2 d-flex justify-content-between align-content-center border border-warning">
       <p class="mb-0">${this.name}</p>
       <div class="d-flex gap-2">

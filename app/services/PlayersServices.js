@@ -10,7 +10,7 @@ class PlayersService {
     const players = AppState.players
     const foundPlayer = players.find(p => p.name == playerName)
     foundPlayer.score += amount
-    console.log(foundPlayer, "-", foundPlayer.score) 
+    if (foundPlayer.score <= 0) foundPlayer.score = 0
   }
 }
 
