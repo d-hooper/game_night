@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="./assets/img/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>Game Night</title>
+</head>
+
+<body data-bs-theme="light">
+  <!-- SECTION -->
+  <header>
+    <nav class="navbar bg-codeworks text-light gap-2 px-2">
+      <img src="./assets/img/logo.png" height="45" alt="" loading="lazy">
+      <div>
+        <b>Game Night</b>
+      </div>
+      <div class="ms-auto" id="authstate"></div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <section id="playersSection" class="row py-3">
+        <!-- <div class="col-6">
+          <div class="bg-light text-dark fs-3 rounded-4 p-2 d-flex justify-content-between align-content-center border border-warning">
+            <p class="mb-0">Ricky</p>
+            <div class="d-flex gap-2">
+              <span class="mdi mdi-minus bg-codeworks text-light rounded-pill" role="button" title="Subtract this player's score"></span>
+              <p class="mb-0">0</p>
+              <span class="mdi mdi-plus bg-codeworks text-light rounded-pill" role="button" title="Add to this player's score"></span>
+            </div>
+          </div>
+        </div> -->
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="text-bg-dark">
+    <div class="text-center">
+      <p class="mb-0"><small>Made with <i class="mdi mdi-heart text-pink"></i> by CodeWorks</small></p>
+    </div>
+  </footer>
+
+  <!-- SECTION links for bootstrap, axios, and auth -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.auth0.com/js/auth0-spa-js/1.22/auth0-spa-js.production.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/jakeoverall/auth0provider-client/browser/Auth0Provider.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+  <!-- The start of our javascript -->
+  <script src="app/App.js" type="module"></script>
+</body>
+
+</html>
